@@ -1,0 +1,21 @@
+:root {
+    --main-bg-color: #D84282;
+}
+* {
+    font-size: 1.5em;
+}
+#menu {
+    position: relative;
+    margin: 0.25em;
+}
+#menu::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1.2em;
+    height: 0.12em;
+    background-color: var(--main-bg-color);
+    box-shadow:
+            0 0.25em 0 0 var(--main-bg-color),
+            0 0.5em 0 0 var(--main-bg-color);
+}
